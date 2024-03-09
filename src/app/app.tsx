@@ -4,7 +4,6 @@ import { lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const GroupPage = lazy(() => import('@/pages/groups'));
-const HomePage = lazy(() => import('@/pages/home'));
 const NoPage = lazy(() => import('@/pages/nopage'));
 
 function App() {
@@ -19,8 +18,7 @@ function App() {
         }
       >
         <Routes>
-          <Route index element={<HomePage />} />
-          <Route path="/groups" element={<GroupPage />} />
+          <Route index element={<GroupPage />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </Suspense>
