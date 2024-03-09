@@ -1,0 +1,6 @@
+{
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "scope-enum": [2, "always", ["app", "components", "hooks", "lib", "store"]]
+  }
+}

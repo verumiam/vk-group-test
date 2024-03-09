@@ -1,0 +1,53 @@
+{
+  "name": "vk-group-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "pnpm tsc",
+    "lint": "eslint . --ext .ts,.tsx && pnpm lint:md",
+    "lint:md": "pnpm markdownlint --ignore-path .gitignore . --config ./markdownlint-config.cjs",
+    "lint:md:fix": "pnpm markdownlint --fix --ignore-path .gitignore . --config ./markdownlint-config.cjs",
+    "format": "pnpm prettier --write \"**/*.{css,js,jsx,ts,tsx,json}\""
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.1",
+    "@vkontakte/icons": "^2.101.0",
+    "@vkontakte/vkui": "^6.0.1",
+    "google-translate-api": "^2.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.1.0",
+    "redux": "^5.0.1",
+    "redux-logger": "^3.0.6",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "@types/node": "^20.11.25",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@types/redux-logger": "^3.0.13",
+    "@types/uuid": "^9.0.8",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "clsx": "^2.1.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "markdownlint-cli": "^0.39.0",
+    "prettier": "^3.2.5",
+    "react-router-dom": "^6.22.2",
+    "sass": "^1.71.1",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.4",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-tsconfig-paths": "^4.3.1"
+  }
+}

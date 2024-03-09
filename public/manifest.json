@@ -1,0 +1,18 @@
+{
+  "name": "Сообщества Вконтакте",
+  "short_name": "vk-group-test",
+  "icons": [
+    {
+      "src": "./vk_logo.ico",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone"
+}

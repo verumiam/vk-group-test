@@ -1,0 +1,74 @@
+@import './variables.scss';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-blue: #{$primary-blue};
+  --primary-black: #{$primary-black};
+  --primary-white: #{$primary-white};
+
+  --layout-width: #{$layout-width};
+}
+
+body {
+  min-width: 320px;
+  min-height: 100dvh;
+
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+
+  &:hover {
+    filter: drop-shadow(0 0 2em var(--primary-blue));
+  }
+}
+
+.layout {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 25px;
+  padding: 30px 0;
+
+  &_home,
+  &_error {
+    justify-content: center;
+    padding: 0;
+    min-height: 100dvh;
+  }
+}
