@@ -13,3 +13,8 @@
 - [Redux Toolkit Query](https://redux-toolkit.js.org/)
 - [VK UI](https://vkcom.github.io/VKUI/)
 
+### Команда для запуска
+```js
+pnpm install
+pnpm dev
+```
